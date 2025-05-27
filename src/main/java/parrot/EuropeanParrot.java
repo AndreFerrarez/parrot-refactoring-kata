@@ -1,9 +1,12 @@
 package parrot;
 
 public class EuropeanParrot extends Parrot {
+
+    private static final double BASE_SPEED = 12.0;
+
     @Override
     public double getSpeed() {
-        return 12.0;
+        return BASE_SPEED;
     }
 
     @Override

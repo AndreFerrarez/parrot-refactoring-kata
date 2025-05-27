@@ -2,6 +2,9 @@ package parrot;
 
 public class NorwegianBlueParrot extends Parrot {
 
+    private static final double BASE_SPEED = 12.0;
+    private static final double MAX_SPEED = 24.0;
+
     private final double voltage;
     private final boolean isNailed;
 
@@ -12,8 +15,11 @@ public class NorwegianBlueParrot extends Parrot {
 
     @Override
     public double getSpeed() {
-        double baseSpeed = 12.0;
-        return isNailed ? 0 : Math.min(24.0, voltage * baseSpeed);
+        if (isNailed) {
+            return 0;
+        }
+        double calculatedSpeed = voltage * BASE_SPEED;
+        return Math.min(MAX_SPEED, calculatedSpeed);
     }
 
     @Override
