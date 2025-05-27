@@ -7,8 +7,8 @@ public class AfricanParrot extends Parrot {
 
     private final int numberOfCoconuts;
 
-    public AfricanParrot(int numberOfCoconuts) {
-        this.numberOfCoconuts = numberOfCoconuts;
+    public AfricanParrot(ParrotAttributes attributes) {
+        this.numberOfCoconuts = attributes.getNumberOfCoconuts();
     }
 
     @Override

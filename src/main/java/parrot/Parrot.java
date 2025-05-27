@@ -10,11 +10,11 @@ public class Parrot {
         return null;
     }
 
-    public static Parrot create(ParrotTypeEnum type, int numberOfCoconuts, double voltage, boolean isNailed) {
+    public static Parrot create(ParrotTypeEnum type, ParrotAttributes attributes) {
         return switch (type) {
             case EUROPEAN -> new EuropeanParrot();
-            case AFRICAN -> new AfricanParrot(numberOfCoconuts);
-            case NORWEGIAN_BLUE -> new NorwegianBlueParrot(voltage, isNailed);
+            case AFRICAN -> new AfricanParrot(attributes);
+            case NORWEGIAN_BLUE -> new NorwegianBlueParrot(attributes);
         };
     }
 }

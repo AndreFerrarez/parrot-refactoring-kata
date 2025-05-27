@@ -8,9 +8,9 @@ public class NorwegianBlueParrot extends Parrot {
     private final double voltage;
     private final boolean isNailed;
 
-    public NorwegianBlueParrot(double voltage, boolean isNailed) {
-        this.voltage = voltage;
-        this.isNailed = isNailed;
+    public NorwegianBlueParrot(ParrotAttributes attributes) {
+        this.voltage = attributes.getVoltage();
+        this.isNailed = attributes.isNailed();
     }
 
     @Override
