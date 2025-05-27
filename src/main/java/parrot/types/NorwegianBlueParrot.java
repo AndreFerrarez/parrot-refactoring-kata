@@ -1,4 +1,7 @@
-package parrot;
+package parrot.types;
+
+import parrot.Parrot;
+import parrot.ParrotAttributes;
 
 public class NorwegianBlueParrot extends Parrot {
 

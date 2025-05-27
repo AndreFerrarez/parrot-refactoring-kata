@@ -1,16 +1,15 @@
-Parrot Refactoring Kata Java version
-====================================
+# 🦜 Parrot Refactoring Kata (Java)
 
-Parrot Refactoring Kata.
+Este projeto é uma refatoração didática baseada no kata original de Emily Bache, com o objetivo de aplicar boas práticas de engenharia de software em um sistema legado escrito em Java.
 
-This is a [Maven](https://maven.apache.org/) and a [Gradle](https://gradle.org/) project at the same time.
+---
 
-To install dependencies:
+## 📌 Objetivos da Refatoração
 
-    mvn verify
+- Aplicar princípios de design como SRP, OCP e encapsulamento.
+- Substituir lógica condicional por polimorfismo.
+- Melhorar clareza e expressividade do código.
+- Organizar o projeto em pacotes com responsabilidades bem definidas.
+- Garantir segurança com testes automatizados antes e após refatorações.
 
-The project uses [JUnit](https://junit.org/).
-
-To run the test:
-
-    mvn test
+---

@@ -1,4 +1,6 @@
-package parrot;
+package parrot.types;
+
+import parrot.Parrot;
 
 public class EuropeanParrot extends Parrot {
 
